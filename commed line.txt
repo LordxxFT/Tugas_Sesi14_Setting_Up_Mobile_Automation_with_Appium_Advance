@@ -1,0 +1,62 @@
+//Terminal installasi
+npm init -y
+npm install mocha --save-dev
+npm install -g mocha
+npm install chai --save-dev
+npm install ajv
+npm install mochawesome --save-dev
+//npx mocha Test/GetUser/GetUser.js --reporter mochawesome (untuk memamnggil mochawesome reporter)
+-------------------------------------------------------------------------
+//Git Hub
+Git status = untuk memerika status file
+Git add <namafile> = untuk menambahkan spesifik file
+Git add . = untuk menambahkan semua file
+        Ex: Git add main
+Git commit –m “pesan commit” = untuk melakukan commit ke repository. 
+       Ex: git commit –m “ini commit pertamaku”
+Git push = untuk melakukan push ke repository
+
+Git log --oneline = cek last commit (dengan one line)
+git revert <hash commit> = membatalkan commit tertentu dengan membuat commit baru yang berlawanan
+git remote -v = 
+git checkout <no commit> = untuk masuk ke dalam commit
+git rebase <main> =  untuk menggabungkan commit dari satu branch ke branch lain (timpa)
+
+GIT branch =  untuk melihat semua branch
+git checkout -b <namabranch baru> = untuk crete branch baru
+git checkout <nama branch> = untuk pindah branch
+Git cherry-pick <no commit> = untuk memilih satu atau lebih commit dari suatu branch dan menerapkannya ke branch lain
+        Ex: Git cherry-pick 8541cd0
+Git merge <namabranch> = menggabungkan branch (biasa di gunakan untuk merge dari branch biasa ke main)
+        Ex: Git merge dev
+----------------------------------------------------------
+//cara run scrpit di page json
+
+npm run tes-digital-skola
+npm run tes-mochawesome
+npm run tes-simple-html
+----------------------------------------------------------------
+// cara connect device android
+
+We have enable these options:
+
+1. USB debugging.
+2. Install via USB.
+3. USB Debugging (Security settings).
+----------------------------------------------------------------------------
+//step" dengan new repository
+
+echo "# Tugas_Sesi11_Web_UI_Automation_part_2" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/LordxxFT/Tugas_Sesi11_Web_UI_Automation_part_2.git
+git push -u origin main
+---------------------------------------------------------------------------
+//cek android 
+adb devices = cek id device android
+adb shell dumpsys activity activities | findstr "ResumedActivity" = cek app device yang saat di buka (bisa digunakan untuk mencari automationName dan appPackage)
+        contoh:
+        'appium:automationName': 'UiAutomator2',
+        'appium:appPackage': 'io.appium.android.apis'
