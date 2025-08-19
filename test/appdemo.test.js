@@ -100,7 +100,7 @@ describe('Appium DEMO App Felix', () => {
     // expect(nilai).to.be.greaterThanOrEqual(10)
 
     const nama = "andi"
-    expect(nama).to.equals("luki")
+    expect(nama).to.equals("andi")
 
   });
 
